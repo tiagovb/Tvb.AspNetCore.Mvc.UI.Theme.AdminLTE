@@ -38,6 +38,8 @@ namespace AdminLTEPro.Users
 
         public virtual bool PhoneNumberConfirmed { get; private set; }
 
+        public bool IsActive => throw new NotImplementedException();
+
         #endregion
 
         /* Add your own properties here. Example:
@@ -55,7 +57,7 @@ namespace AdminLTEPro.Users
          * schema change to the database.
          */
 
-        private AppUser()
+        public AppUser()
         {
             
         }
