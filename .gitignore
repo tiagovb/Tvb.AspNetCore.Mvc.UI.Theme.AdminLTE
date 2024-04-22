@@ -257,3 +257,4 @@ src/AdminLTEPro.Web.Host/Logs/*
 src/AdminLTEPro.IdentityServer/Logs/*
 src/AdminLTEPro.HttpApi.Host/Logs/*
 src/AdminLTEPro.HttpApi.HostWithIds/Logs/*
+src/AdminLTEPro.Web/wwwroot/libs/*
