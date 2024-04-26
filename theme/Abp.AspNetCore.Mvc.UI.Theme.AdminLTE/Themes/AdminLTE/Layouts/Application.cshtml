@@ -56,7 +56,7 @@
     <!-- CDN Google Font: Source Sans Pro -->
     <!-- <link href="https://fonts.cat.net/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
 </head>
-<body class="sidebar-mini layout-fixed">
+<body class="sidebar-mini layout-fixed control-sidebar-open text-sm">
     @await Component.InvokeLayoutHookAsync(LayoutHooks.Body.First, StandardLayouts.Application)
 
     <div class="wrapper">
@@ -67,12 +67,13 @@
             @RenderBody()
         </div>
 
-        @(await Component.InvokeAsync<FooterViewComponent>())
+        @* @(await Component.InvokeAsync<FooterViewComponent>()) *@
         @(await Component.InvokeAsync<ControlSidebarViewComponent>())
     </div>
 
     <abp-script-bundle name="@AdminLTEThemeBundles.Scripts.Global" />
 
+    <script src="~/Abp/ApplicationLocalizationScript?cultureName=@CultureInfo.CurrentUICulture.Name"></script>
     <script src="~/Abp/ApplicationConfigurationScript"></script>
     <script src="~/Abp/ServiceProxyScript"></script>
 

@@ -19,12 +19,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE">
-      <Pack>True</Pack>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\**\*.json" />
     <Content Remove="Localization\**\*.json" />
     <EmbeddedResource Include="wwwroot\**\*" />
@@ -32,11 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Account.Web.IdentityServer" Version="8.0.0"  />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="8.0.0"  />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared" Version="8.0.0"  />
-    <PackageReference Include="Volo.Abp.Identity.Web" Version="8.0.0"  />
-    <PackageReference Include="Volo.Abp.TenantManagement.Web" Version="8.0.0"  />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Web" Version="8.0.4" />
   </ItemGroup>
 
 </Project>
